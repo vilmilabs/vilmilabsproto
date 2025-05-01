@@ -23,7 +23,7 @@ export default function TextInputExample() {
         value={inputValue}
         onChange={handleChange}
         placeholder="Where to?"
-        className="border p-2 rounded"
+        className="border p-4 rounded"
       />
       <button type="submit" className="ml-2 p-2 bg-teal-700 text-white rounded hover:cursor-grab">
         GO! to ~{inputValue}
