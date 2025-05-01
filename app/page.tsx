@@ -1,6 +1,6 @@
 // app/page.js
-import UploadForm from '@/components/UploadForm';
-import FileList from '@/components/FileList';
+import UploadForm from '../components/UploadForm';
+import FileList from '../components/FileList';
 
 export default async function Page() {
   return (
