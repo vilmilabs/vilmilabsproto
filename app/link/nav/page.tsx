@@ -5,6 +5,6 @@ import { redirect } from 'next/navigation'
 export default function Page() {
   
   return (
-    redirect("web.net/to/yt")
+    redirect("/company/map")
   )
 }
