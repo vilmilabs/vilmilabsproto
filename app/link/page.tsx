@@ -1,16 +1,16 @@
 'use client'
 
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import { redirect } from 'next/navigation'
 
 export default function TextInputExample() {
   const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: { target: { value: SetStateAction<string>; }; }) => {
     setInputValue(event.target.value);
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     redirect(`https://${inputValue}`);
     // You can also send this data to an API or backend
