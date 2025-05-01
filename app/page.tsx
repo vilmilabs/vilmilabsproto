@@ -1,22 +1,13 @@
-export default function Home() {
+// app/page.js
+import UploadForm from '@/components/UploadForm';
+import FileList from '@/components/FileList';
+
+export default async function Page() {
   return (
-    <div className="">
-      <br />
-      <section id="head1">
-        <div>Your ideas made possible!</div>
-      </section>
-
-      <a href="/link" className="text-indigo-600 underline hover:underline-offset-8">VilmiLabs - LINK</a>
-      <br />
-      adsfáékhasdf
-      dsafoj
-      <br />dsofjg
-      <br />sdaljféf
-      ésldja <br />fléjdséfbr
-      <br />ljdlÉFsdaélfj
-
-      sadfplésadj
-      él
+    <div>
+      <h1>File Upload and Access</h1>
+      <UploadForm />
+      <FileList />
     </div>
   );
 }
